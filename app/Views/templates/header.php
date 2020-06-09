@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/style.css')?>">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
     <title></title>
 
   </head>
@@ -25,6 +27,9 @@
           </li>
           <li class="nav-item <?= ($uri->getSegment(1) == 'profile' ? 'active' : null) ?>">
             <a class="nav-link" href="/profile">Profile</a>
+          </li>
+          <li class="nav-item <?= ($uri->getSegment(1) == 'chat' ? 'active' : null) ?>">
+            <a class="nav-link" href="/chat">Chat</a>
           </li>
         </ul>
         <ul class="navbar-nav my-2 my-lg-0">
